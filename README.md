@@ -1,2 +1,4 @@
 # ryontex.github.io
-Ryontex information page
+
+Bu site kişisel bir sayfadır.  
+Şu an için herhangi bir içerik paylaşılmamaktadır.
