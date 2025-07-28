@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryontex</title>
-    <link rel="shortcut icon" href="avatar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="avatar.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,11 +17,14 @@
     </div>
 
     <div class="main">
-        <div class="logo">
+        <div id="logo" class="logo">
             <img style="border-radius: 50%;" src="avatar.webp" alt="avatar">
         </div>
         <h1 class="baslik">Ryontex</h1>
         <p id="yazi" class="baslikaltiyazi">have a nice day!</p>
+            
+        <br>
+        <a target="_blank" class="dclink" href="https://discord.com/users/968156516253327370"><i class="fa-solid fa-user-plus"></i> Add On Discord</a>
 
         <div class="links">
             <a class="link" target="_blank" href="https://youtube.com/@ryontex"><i class="fa-brands fa-youtube"></i></a>
@@ -51,6 +54,20 @@ const audio = new Audio('music.mp3');
 const progress = document.querySelector('.progress');
 const playPauseBtn = document.getElementById('play-pause');
 const playIcon = playPauseBtn.querySelector('i');
+document.getElementById("logo").addEventListener("click", () => {
+  const emojis = ["💥", "🚀", "😎", "🔥", "🎉", "✨", "🍕", "🎮", "🔱", "💤", "🏹", "🤖", "🍻", "🎶", "📸", "🎱", "💎" ];
+  const emoji = document.createElement("div");
+  emoji.className = "emoji";
+  emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+  
+  emoji.style.left = `${Math.random() * 100}%`;
+  
+  document.body.appendChild(emoji);
+
+  setTimeout(() => {
+    emoji.remove();
+  }, 2500);
+});
 
 window.addEventListener('load', () => {
     audio.play()
