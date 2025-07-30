@@ -75,11 +75,41 @@ body {
     border-radius: 50%;
 }
 
-.link:hover {
+#youtube:hover{
     transition: 300ms;
     border-radius: 50%;
     text-decoration: none;
-    color: #333;
+    color: red;
+    font-size: xxx-large;
+    margin: 2vh;
+    margin-top: 2vh;
+}
+
+#spotify:hover{
+    transition: 300ms;
+    border-radius: 50%;
+    text-decoration: none;
+    color: green;
+    font-size: xxx-large;
+    margin: 2vh;
+    margin-top: 2vh;
+}
+
+#github:hover{
+    transition: 300ms;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: xxx-large;
+    margin: 2vh;
+    margin-top: 2vh;
+}
+
+#reddit:hover{
+    transition: 300ms;
+    border-radius: 50%;
+    text-decoration: none;
+    color: orangered;
     font-size: xxx-large;
     margin: 2vh;
     margin-top: 2vh;
